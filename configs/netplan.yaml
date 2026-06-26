@@ -1,0 +1,15 @@
+# This is the network config written by 'subiquity'
+network:
+  version: 2
+  ethernets:
+    enp3s0:
+      match:
+        macaddress: 3c:97:0e:55:40:ee
+      set-name: enp3s0
+      addresses: [192.168.1.6/24]
+      routes:
+        - to: default
+          via: 192.168.1.1
+      nameservers:
+        addresses: [8.8.8.8, 8.8.4.4]
+      dhcp4: false 

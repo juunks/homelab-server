@@ -1,0 +1,8 @@
+//
+// Do any local configuration here
+//
+zone "homelab.local" {
+   type master;
+   file "/etc/bind/zones/db.homelab.local";
+};
+
